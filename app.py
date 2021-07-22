@@ -15,5 +15,9 @@ def insert():
     col.insert(params)
     return True,200
 
+@app.route('/hello', methods=['GET'])
+def hello():
+    return 'Hello!',200
+
 if __name__ == '__main__':
     app.run('0.0.0.0', PORT=PORT)
